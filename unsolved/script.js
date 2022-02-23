@@ -94,7 +94,6 @@ const check = () =>{
 
     if (verifiedLower === false) {
       check()
-      console.log('no lower')
     }
   }
 
@@ -110,7 +109,7 @@ const check = () =>{
     }
     if (verifiedUpper === false) {
       check()
-      console.log('no upper')
+
     }
   }
 
@@ -144,6 +143,5 @@ document.getElementById('generate').addEventListener('click', ()=>{
   typePrompt()
   password = check()
   document.getElementById('password').innerHTML = password
-  console.log(length, lowerCase, upperCase)
 })
 
